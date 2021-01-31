@@ -1,5 +1,6 @@
 package com.sehatq.testapplication.core.platform
 
+import android.content.Intent
 import android.view.Gravity
 import android.view.View
 import android.view.Window
@@ -11,6 +12,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.sehatq.testapplication.R
+import com.sehatq.testapplication.core.extention.finishAllPreviousActivity
+import com.sehatq.testapplication.core.util.Cache
+import com.sehatq.testapplication.core.widget.CustomDialog
+import com.sehatq.testapplication.feature.entrance.SplashActivity
 
 abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity() {
 
@@ -57,6 +62,30 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity() {
         toast.duration = Toast.LENGTH_LONG
         toast.view = layout
         toast.show()
+    }
+
+    fun signoutDialog(){
+        CustomDialog.showPopUpWithNegativeButton(this,
+            image = R.mipmap.ic_launcher_round,
+            title = getString(R.string.menu_sign_out),
+            body = getString(R.string.title_sign_out),
+            btnPositive = getString(R.string.label_ok),
+            btnPositiveListener = View.OnClickListener {
+                CustomDialog?.dismiss()
+                removeForLogout()
+            },
+            btnNegative = getString(R.string.label_cancel),
+            btnNegativeListener = View.OnClickListener {
+                CustomDialog?.dismiss()
+            }
+        )
+    }
+
+    private fun removeForLogout() {
+        Cache.removeForLogout().also {
+            val i = Intent(this, SplashActivity::class.java)
+            finishAllPreviousActivity(i)
+        }
     }
 
 }

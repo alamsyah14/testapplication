@@ -33,4 +33,10 @@
     <string name="menu_profile">Profile</string>
     <string name="menu_sign_out">Sign Out</string>
 
+    <string name="error_msg_please_try_again">Please Try Again</string>
+    <string name="label_cancel">Cancelled</string>
+    <string name="label_ok">Ok</string>
+
+    <string name="title_sign_out">Do you want to sign out ?</string>
+
 </resources>

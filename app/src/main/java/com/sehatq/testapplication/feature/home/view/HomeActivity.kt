@@ -42,13 +42,12 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
                 openPagesPurchase()
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_logout -> {
+                signoutDialog()
+                return@OnNavigationItemSelectedListener true
+            }
         }
         false
-    }
-
-    private fun openPagesPurchase() {
-        val intent = Intent(this@HomeActivity,HistoryActivity::class.java)
-        startActivity(intent)
     }
 
     fun setCurrentPage(menu: Int){
@@ -145,6 +144,11 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>() {
         if (!compositeDisposable.isDisposed){
             compositeDisposable.clear()
         }
+    }
+
+    private fun openPagesPurchase() {
+        val intent = Intent(this@HomeActivity,HistoryActivity::class.java)
+        startActivity(intent)
     }
 
 }
