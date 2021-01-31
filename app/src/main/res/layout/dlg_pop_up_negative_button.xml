@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black70"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_16_dp"
+        android:layout_marginLeft="@dimen/dimen_16_dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:paddingTop="@dimen/dimen_12_dp"
+            android:paddingRight="@dimen/dimen_16_dp"
+            android:paddingLeft="@dimen/dimen_16_dp"
+            android:paddingBottom="@dimen/dimen_16_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dlgIcon"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dlgTitle"
+                android:layout_below="@id/dlgIcon"
+                android:layout_marginTop="4dp"
+                tools:text="Whoops !"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:lineSpacingExtra="4sp"
+                android:layout_marginLeft="@dimen/dimen_12_dp"
+                android:layout_marginRight="@dimen/dimen_12_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/dlgSubTitle"
+                android:layout_below="@id/dlgTitle"
+                android:layout_marginTop="@dimen/dimen_8_dp"
+                tools:text="@string/error_msg_please_try_again"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black20"
+                android:textSize="16sp"
+                android:lineSpacingExtra="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/bottomButton"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_below="@id/dlgSubTitle"
+                android:paddingTop="@dimen/dimen_16_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dlgNegativeBtn"
+                    style="@style/ButtonSecondary"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:layout_gravity="center"
+                    android:text="@string/label_cancel"
+                    android:stateListAnimator="@null"
+                    tools:targetApi="lollipop" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonPrimary"
+                    android:id="@+id/dlgBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/label_ok" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

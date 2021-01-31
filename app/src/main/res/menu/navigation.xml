@@ -26,4 +26,10 @@
         app:showAsAction="always"
         android:title="@string/menu_profile" />
 
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="always"
+        android:title="@string/menu_sign_out" />
+
 </menu>
