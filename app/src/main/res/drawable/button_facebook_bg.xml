@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen_8_dp"/>
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="@color/charcoal"
+                android:endColor="@color/white50"/>
+
+        </shape>
+    </item>
+
+    <item>
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dimen_8_dp"/>
+                    <gradient
+                        android:type="linear"
+                        android:angle="0"
+                        android:startColor="@color/com_facebook_blue"
+                        android:endColor="@color/com_facebook_button_background_color"/>
+                </shape>
+            </item>
+
+
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dimen_8_dp"/>
+                    <solid android:color="@color/whiteGray"/>
+                </shape>
+            </item>
+
+        </selector>
+    </item>
+
+</layer-list>

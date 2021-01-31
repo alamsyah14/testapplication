@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteGray">#F8F8FA</color>
+    <color name="white50">#80ffffff</color>
+    <color name="charcoal">#4a4a4a</color>
+    <color name="black">#000000</color>
+    <color name="black70">#B3000000</color>
+    <color name="black20">#33000000</color>
+    <color name="tomato">#e43e36</color>
+    <color name="angryTomato">#f14336</color>
+    <color name="mango">#f6932c</color>
+
+    <!--Shades gray-->
+    <color name="darkGray">#313131</color>
+    <color name="gray">#AEAEAE</color>
+    <color name="lightGray">#D8DADC</color>
+    <color name="lightGray2">#D8D8D8</color>
+    <color name="lightGray3">#eaebf3</color>
+    <color name="colorGrey">#D8DADC</color>
+    <color name="whiteTransparent">#52FFFFFF</color>
+    <color name="darkGray2">#545454</color>
+
+    <color name="googlePrimary">#4285f4</color>
+    <color name="googleSecondary">#5291fa</color>
+
+</resources>

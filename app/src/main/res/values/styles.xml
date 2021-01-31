@@ -1,0 +1,352 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/whiteTransparent</item>
+        <item name="colorPrimaryDark">@color/darkGray2</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Button Style-->
+    <style name="ButtonPrimary" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_primary_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="ButtonGoogle" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_google_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="ButtonFacebook" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_facebook_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+
+    <style name="ButtonSecondary" parent="ButtonPrimary">
+        <item name="android:background">@drawable/button_transparent_bg</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonPrimary.Half">
+        <item name="android:width">160dp</item>
+    </style>
+
+    <!--Base Text style-->
+    <style name="BaseAppTheme.Text" parent="TextAppearance.AppCompat" />
+
+    <style name="BaseAppTheme.Text.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="BaseAppTheme.Text.Bold.Italic">
+        <item name="android:fontFamily">@font/roboto_italic</item>
+    </style>
+
+    <style name="BaseAppTheme.Text.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BaseAppTheme.Text.Regular.Italic">
+        <item name="android:fontFamily">@font/roboto_italic</item>
+    </style>
+
+
+    <!--Text style-->
+    <style name="HeadlineText" parent="BaseAppTheme.Text">
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+    </style>
+
+    <style name="SubHeadlineText" parent="BaseAppTheme.Text">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="BodyText" parent="BaseAppTheme.Text">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="MicroText" parent="BaseAppTheme.Text">
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+    <style name="MiniText" parent="BaseAppTheme.Text">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+
+    <!--Headline Text Bold-->
+    <style name="HeadlineText.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="HeadlineText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeadlineText.Bold.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="HeadlineText.Bold.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="HeadlineText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Headline Text Regular-->
+    <style name="HeadlineText.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="HeadlineText.Regular.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeadlineText.Regular.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="HeadlineText.Regular.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="HeadlineText.Regular.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Subheadline Text Bold-->
+    <style name="SubHeadlineText.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="SubHeadlineText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SubHeadlineText.Bold.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SubHeadlineText.Bold.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="SubHeadlineText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Subheadline Text Regular-->
+    <style name="SubHeadlineText.Regular">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="SubHeadlineText.Regular.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SubHeadlineText.Regular.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SubHeadlineText.Regular.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="SubHeadlineText.Regular.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SubHeadlineText.Medium">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <!--Body Text Bold-->
+    <style name="BodyText.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="BodyText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BodyText.Bold.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="BodyText.Bold.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="BodyText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BodyText.Medium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <!--Body Text Regular-->
+    <style name="BodyText.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BodyText.Regular.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BodyText.Regular.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="BodyText.Regular.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="BodyText.Regular.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BodyText.Regular.Red">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <!--Micro Text Bold-->
+    <style name="MicroText.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="MicroText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MicroText.Bold.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MicroText.Bold.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="MicroText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Micro Text Regular-->
+    <style name="MicroText.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="MicroText.Regular.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MicroText.Regular.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MicroText.Regular.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="MicroText.Regular.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Mini Text Bold-->
+    <style name="MiniText.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="MiniText.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MiniText.Bold.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MiniText.Bold.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="MiniText.Bold.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--Mini Text Regular-->
+    <style name="MiniText.Regular">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="MiniText.Regular.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MiniText.Regular.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MiniText.Regular.LightGray">
+        <item name="android:textColor">@color/lightGray</item>
+    </style>
+
+    <style name="MiniText.Regular.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppToolbarTextAppearance" parent="SubHeadlineText.Bold.Black"/>
+
+    <style name="AppToolbarTextAppearance.Center" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.LoadingDialog" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="BottomNavigationViewInactiveTextStyle">
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+        <item name="android:textColor">@color/lightGray</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,79 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72"
+        classpath 'com.google.gms:google-services:4.2.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}
+
+ext {
+    kotlin_version              = '1.3.72'
+    minSupportSDKVersion        = 23
+    androidCompileVersion       = 28
+    androidTargetVersion        = 28
+
+    lifecycleVersion           = "2.0.0"
+    pagingVersion               = "1.0.1"
+
+    //layouting
+    lottieVersion               = "3.1.0"
+    motionLayoutVersion         = "2.0.0-alpha4"
+    materialVersion             = "1.0.0"
+    picassoVersion              = "2.71828"
+    picassoTransform            = "2.2.1"
+    skeletonVersion             = "1.1.2"
+    shimmerLayout               = "2.1.0"
+    shimmerAndroidVersion       = "0.4.0"
+
+    //networking
+    okHttpVersion               = "3.12.0"
+    retrofitVersion             = "2.5.0"
+
+    //rx
+    rxKotlinVersion             = "2.3.0"
+    rxAndroidVersion            = "2.1.0"
+    funktionaleVersion          = "1.2"
+
+    //social media
+    facebookVersion             = "4.42.0"
+    googlSDKVersion             = "16.0.1"
+
+    //Google services
+    google                      = "17.1.0"
+    googleBasement              = "17.1.1"
+    googleCommon                = "17.0.0"
+
+    //Glide
+    glide                       = "4.9.0"
+    glideTransformation         = "4.1.0"
+
+    //testing purpose
+    jUnitVersion                = "4.12"
+    robolectricVersion          = "1.1.0"
+    mockitoVersion              = "2.23.0"
+    uiAutomatorVersion          = "2.2.0"
+    espressoVersion             = "3.3.0"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

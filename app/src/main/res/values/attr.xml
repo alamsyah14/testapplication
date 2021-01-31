@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextField">
+        <attr name="titleHint" format="string"/>
+        <attr name="fieldHint" format="string" />
+        <attr name="showLine" format="boolean"/>
+        <attr name="showCounter" format="boolean"/>
+        <attr name="fieldType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="search" value="1" />
+            <enum name="drop_down" value="2" />
+            <enum name="date_picker" value="3"/>
+            <enum name="currency" value="4"/>
+            <enum name="password" value="5"/>
+            <enum name="not_editable" value="6"/>
+        </attr>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:inputType" />
+        <attr name="android:focusable"/>
+    </declare-styleable>
+
+    <declare-styleable name="PrimaryButton">
+        <attr name="android:text" />
+        <attr name="android:textAllCaps" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+</resources>

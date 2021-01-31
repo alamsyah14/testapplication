@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Sehat Q Test Application</string>
+    <string name="google_client_id">932365496437-dsavqcsi625ffq5jperiblfl20f8fsn3.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">571720460453941</string>
+    <string name="fb_login_protocol_scheme">fb571720460453941</string>
+    <string name="title_login">Login</string>
+
+    <string name="label_username">Username</string>
+    <string name="hint_username">Input Username</string>
+    <string name="error_empty_username">Username must be not empty</string>
+    <string name="label_password">Password</string>
+    <string name="hint_password">Input Password</string>
+    <string name="error_empty_password">Password must be not empty</string>
+    <string name="error_password_min_char">Password minimal must be six character</string>
+    <string name="error_password_format">Password format must be combine alpha numeric</string>
+    <string name="label_remember_me">Remember me</string>
+
+    <string name="title_sign_in">Sign In</string>
+    <string name="title_sign_in_google">Sign In with Google</string>
+    <string name="title_sign_in_facebook">Sign In with Facebook</string>
+
+    <string name="hint_search">Search...</string>
+    <string name="empty_search">Product empty, Please input correct value in search column.</string>
+    <string name="title_detail_product">Product Detail</string>
+    <string name="title_history">Purchase History</string>
+    <string name="empty_purchase">Product empty, Please buy item first.</string>
+
+    <string name="title_buy">Buy</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_feed">Feed</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_sign_out">Sign Out</string>
+
+</resources>
